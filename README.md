@@ -45,7 +45,7 @@ sudo systemctl status postgresql
 Switch user to postgres
 
 ```
-sudo -u postgres
+su - postgres
 psql
 ```
 Run the below script to create the user and role. 
