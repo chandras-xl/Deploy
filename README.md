@@ -93,6 +93,10 @@ Enable the RabbitMQ management plugins by running the command below
 ```
 sudo rabbitmq-plugins enable rabbitmq_management
 ```
+Below plugin enables access to xldeploy
+```
+rabbitmq-plugins enable rabbitmq_jms_topic_exchange
+```
 <b> Step 3: (On deploy master-0 and deploy-master-1)
 
 Mount the NFS share
