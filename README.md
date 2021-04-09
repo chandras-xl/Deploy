@@ -161,6 +161,10 @@ RabbitMQ Java client
 wget https://repo1.maven.org/maven2/com/rabbitmq/amqp-client/5.11.0/amqp-client-5.11.0.jar
 ```
 Update the xl-deploy.conf file.
+```
+cd /opt/xldeploy/xl-deploy-10.0.0-server/conf
+nano xl-deploy.conf
+```
 
 Run the setup from below path
 ```
