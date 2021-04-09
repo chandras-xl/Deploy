@@ -37,6 +37,7 @@ Installing postgres database
 ```
 sudo dnf module enable postgresql:12
 sudo dnf install postgresql-server
+/usr/bin/postgresql-setup --initdb
 sudo systemctl start postgresql
 sudo systemctl enable postgresql
 sudo systemctl status postgresql
