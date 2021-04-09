@@ -64,15 +64,21 @@ Installing RabbitMQ
 ```
 Install EPEL
 sudo yum -y install epel-release 
+
 Download the rabbitmq installer
 curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh | sudo bash 
  ```
  Install and start the rabbitMQ server.
  ```
 sudo yum -y install rabbitmq-server 
+echo "172.16.28.68 $(hostname -s)" | sudo tee -a /etc/hosts
 sudo systemctl start rabbitmq-server 
 sudo systemctl enable rabbitmq-server 
 sudo systemctl status rabbitmq-server 
+```
+Package details can be queried using rpm command with the option -qi
+```
+rpm -qi rabbitmq-server
 ```
 Create rabbitmq admin user and delete the default guest user.
 ```
@@ -83,7 +89,10 @@ sudo rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"
 sudo rabbitmqctl delete_user guest 
 sudo rabbitmqctl list_users 
 ```
-
+Enable the RabbitMQ management plugins by running the command below
+```
+sudo rabbitmq-plugins enable rabbitmq_management
+```
 <b> Step 3: (On deploy master-0 and deploy-master-1)
 
 Mount the NFS share
