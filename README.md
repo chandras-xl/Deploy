@@ -7,11 +7,12 @@ Deploy requires Java SE 8 or Java SE 11
 
 OS - CentOS Linux release 8.1.1911 (Core)
 ```
-1. devops-centos-3   172.16.25.133 - deploy master -0
-2. devops-centos-4   172.16.21.134 - deploy master -1
-3. devops-centos-5   172.16.29.23  - deploy worker -0
-4. devops-centos-8   172.16.29.35  - deploy worker -1
-5. devops-centos-10  172.16.28.68  - postgres, haproxy, rabbitmq
+1. devops-centos-3   172.16.25.133 - Deploy master -0
+2. devops-centos-4   172.16.21.134 - Deploy master -1
+3. devops-centos-5   172.16.29.23  - Deploy worker -0
+4. devops-centos-8   172.16.29.35  - Deploy worker -1
+5. devops-centos-9   172.16.16.136 - RabbitMQ
+6. devops-centos-10  172.16.28.68  - Postgres DB, HAproxy LoadBalancer
 ```
 Services required:
 
@@ -58,7 +59,7 @@ CREATE USER xldeploy WITH
 
 CREATE DATABASE xldeploy OWNER xldeploy;
 ```
-<b>Step 2: (On devops-centos-10)
+<b>Step 2: (On devops-centos-9)
 
 Installing RabbitMQ
 ```
@@ -71,7 +72,7 @@ curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/sc
  Install and start the rabbitMQ server.
  ```
 sudo yum -y install rabbitmq-server 
-echo "172.16.28.68 $(hostname -s)" | sudo tee -a /etc/hosts
+echo "172.16.16.136 $(hostname -s)" | sudo tee -a /etc/hosts
 sudo systemctl start rabbitmq-server 
 sudo systemctl enable rabbitmq-server 
 sudo systemctl status rabbitmq-server 
