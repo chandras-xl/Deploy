@@ -90,7 +90,7 @@ sudo rabbitmqctl set_permissions -p / admin ".*" ".*" ".*"
 sudo rabbitmqctl delete_user guest 
 sudo rabbitmqctl list_users 
 ```
-Enable the RabbitMQ management plugins by running the command below
+Enable the RabbitMQ management plugins by running the below command
 ```
 sudo rabbitmq-plugins enable rabbitmq_management
 ```
