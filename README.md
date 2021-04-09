@@ -205,13 +205,13 @@ cd /opt/xldeploy/xl-deploy-10.0.0-server/bin
 Start the worker -0
 ```
 cd /opt/xldeploy/xl-deploy-10.0.0-server/bin
-./run.sh worker -api http://172.16.28.68 -master 172.16.25.133:8180 -master 172.16.21.134:8180 -name worker0 -hostname devops-centos-5 -port 8181
+./run.sh worker -api http://172.16.28.68 -master 172.16.25.133:8180 -master 172.16.21.134:8180 -name worker-0 -hostname devops-centos-5 -port 8181
 ```
 <b>Step 8: (On worker-1)
 
 Start the worker -1  
 ```
 cd /opt/xldeploy/xl-deploy-10.0.0-server/bin
-./run.sh worker -api http://172.16.28.68 -master 172.16.25.133:8180 -master 172.16.21.134:8180 -name worker1 -hostname devops-centos-8 -port 8181
+./run.sh worker -api http://172.16.28.68 -master 172.16.25.133:8180 -master 172.16.21.134:8180 -name worker-1 -hostname devops-centos-8 -port 8181
 ```
 
