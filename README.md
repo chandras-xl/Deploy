@@ -24,6 +24,13 @@ Services required:
 ```
 <h1> Setup </h1>
 
+Since this is dev setup we will diable the firewalld service
+```
+systemctl status firewalld.service
+systemctl stop firewalld.service
+systemctl status firewalld.service
+```
+
 <b>step 1: (On devops-centos-10)</b>
 
 Installing postgres database
