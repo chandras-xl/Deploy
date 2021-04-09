@@ -137,6 +137,7 @@ Setup deploy server:
 Create directory under opt
 ```
 mkdir -p /opt/xldeploy/
+cd /opt/xldeploy/
 ```
 Download the deploy installer from xebialabs distribution
 ```
