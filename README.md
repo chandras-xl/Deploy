@@ -18,9 +18,9 @@ Services required:
 ```
 1. XL Product        - Deploy engine version 10.0.0
 2. Databse           - Postgres 12
-3. Messaging Queue   - RabbitMQ  
-4. Loadbalancer      - HAproxy
-5. Shared storage    - NFS file share
+3. Messaging Queue   - RabbitMQ 3.8.8
+4. Loadbalancer      - HAproxy 1.8.23 
+5. Shared storage    - NFS v3 file share
 ```
 <h1> Setup </h1>
 
