@@ -133,6 +133,12 @@ systemctl start haproxy
 systemctl enable haproxy
 systemctl status haproxy
 ```
+If SELinux is preventing /usr/sbin/haproxy from name_connect access on the tcp_socket port 5002 execute below command.
+```
+semanage port -a -t http_port_t -p tcp 5002
+ausearch -c 'haproxy' --raw | audit2allow -M my-haproxy
+semodule -X 300 -i my-haproxy.pp
+```
 
 <b>Step 5: (On deploy master-0) 
 
