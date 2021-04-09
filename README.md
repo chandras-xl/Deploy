@@ -48,7 +48,7 @@ Switch user to postgres
 su - postgres
 psql
 ```
-Run the below script to create the user and role. 
+Run the below script to create the user and role for deploy
 ```
 CREATE USER xldeploy WITH
   NOSUPERUSER
