@@ -24,7 +24,7 @@ Services required:
 ```
 <h1> Setup </h1>
 
-<b>step 1: (On devops-centos-10)
+<b>step 1: (On devops-centos-10)</b>
 
 Installing postgres database
 ```
