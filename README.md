@@ -183,9 +183,9 @@ cd /opt/xldeploy/xl-deploy-10.0.0-server/bin
 ```
 Copy the setup to master-1, worker-0 and worker-1
 ```
-scp -r /opt/xldeploy/xl-deploy-10.0.0-server/ root@172.16.21.134:/opt/xldeploy/   - master -1
-scp -r /opt/xldeploy/xl-deploy-10.0.0-server/ root@172.16.29.23:/opt/xldeploy/    - worker -0
-scp -r /opt/xldeploy/xl-deploy-10.0.0-server/ root@172.16.29.35:/opt/xldeploy/    - worker -1
+scp -r /opt/xldeploy/xl-deploy-10.0.0-server/ root@172.16.21.134:/opt/xldeploy/xl-deploy-10.0.0-server/   - master -1
+scp -r /opt/xldeploy/xl-deploy-10.0.0-server/ root@172.16.29.23:/opt/xldeploy/xl-deploy-10.0.0-server/    - worker -0
+scp -r /opt/xldeploy/xl-deploy-10.0.0-server/ root@172.16.29.35:/opt/xldeploy/xl-deploy-10.0.0-server/    - worker -1
 ```
 start the master-0
 ```
@@ -205,13 +205,13 @@ cd /opt/xldeploy/xl-deploy-10.0.0-server/bin
 Start the worker -0
 ```
 cd /opt/xldeploy/xl-deploy-10.0.0-server/bin
-./run.sh worker -api http://<LB IP> -master <master-1 IP>:8180 -master <master-2 IP>:8180 -name worker1 -hostname devops-centos-12 -port 8181
+./run.sh worker -api http://172.16.28.68 -master 172.16.25.133:8180 -master 172.16.21.134:8180 -name worker0 -hostname devops-centos-5 -port 8181
 ```
 <b>Step 8: (On worker-1)
 
 Start the worker -1  
 ```
 cd /opt/xldeploy/xl-deploy-10.0.0-server/bin
-./run.sh worker -api http://<LB IP> -master <master-1 IP>:8180 -master <master-2 IP>:8180 -name worker2 -hostname devops-centos-13 -port 8182
+./run.sh worker -api http://172.16.28.68 -master 172.16.25.133:8180 -master 172.16.21.134:8180 -name worker1 -hostname devops-centos-8 -port 8181
 ```
 
