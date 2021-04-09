@@ -96,10 +96,13 @@ vi /etc/fstab
 Installing HAproxy 
 ```
 dnf install haproxy -y
+
+Take backup of the HAproxy config file
 mv /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg-bak
+
 nano /etc/haproxy/haproxy.cfg
 ```
-Take backup of the HAproxy config file
+Verify your HAproxy config file with below command.
 ```
 haproxy -c -f /etc/haproxy/haproxy.cfg
 ```
@@ -154,6 +157,7 @@ scp -r /opt/xl-deploy/xl-deploy-10.0.0-server/ root@172.16.29.35:/opt/xl-deploy/
 ```
 start the master-0
 ```
+cd /opt/xl-deploy/xl-deploy-10.0.0-server/bin
 ./run.sh
 ```
 
@@ -161,17 +165,21 @@ start the master-0
 
 Start the xldeploy master-1
 ```
+cd /opt/xl-deploy/xl-deploy-10.0.0-server/bin
 ./run.sh
 ```
 <b>step 7: (On worker-0)
 
 Start the worker -0
 ```
+cd /opt/xl-deploy/xl-deploy-10.0.0-server/bin
 ./run.sh worker -api http://<LB IP> -master <master-1 IP>:8180 -master <master-2 IP>:8180 -name worker1 -hostname devops-centos-12 -port 8181
 ```
 <b>Step 8: (On worker-1)
 
 Start the worker -1  
 ```
+cd /opt/xl-deploy/xl-deploy-10.0.0-server/bin
 ./run.sh worker -api http://<LB IP> -master <master-1 IP>:8180 -master <master-2 IP>:8180 -name worker2 -hostname devops-centos-13 -port 8182
 ```
+
