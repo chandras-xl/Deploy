@@ -172,7 +172,7 @@ nano xl-deploy.conf
 
 Run the setup from below path
 ```
-cd /opt/xl-deploy/xl-deploy-10.0.0-server/bin
+cd /opt/xldeploy/xl-deploy-10.0.0-server/bin
 ./run.sh -setup
 ```
 Copy the setup to master-1, worker-0 and worker-1
