@@ -177,9 +177,9 @@ cd /opt/xldeploy/xl-deploy-10.0.0-server/bin
 ```
 Copy the setup to master-1, worker-0 and worker-1
 ```
-scp -r /opt/xldeploy/xl-deploy-10.0.0-server/ root@172.16.21.134:/opt/xl-deploy/   - master -1
-scp -r /opt/xldeploy/xl-deploy-10.0.0-server/ root@172.16.29.23:/opt/xl-deploy/    - worker -0
-scp -r /opt/xldeploy/xl-deploy-10.0.0-server/ root@172.16.29.35:/opt/xl-deploy/    - worker -1
+scp -r /opt/xldeploy/xl-deploy-10.0.0-server/ root@172.16.21.134:/opt/xldeploy/   - master -1
+scp -r /opt/xldeploy/xl-deploy-10.0.0-server/ root@172.16.29.23:/opt/xldeploy/    - worker -0
+scp -r /opt/xldeploy/xl-deploy-10.0.0-server/ root@172.16.29.35:/opt/xldeploy/    - worker -1
 ```
 start the master-0
 ```
