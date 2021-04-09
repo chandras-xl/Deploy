@@ -183,7 +183,7 @@ scp -r /opt/xldeploy/xl-deploy-10.0.0-server/ root@172.16.29.35:/opt/xldeploy/  
 ```
 start the master-0
 ```
-cd /opt/xl-deploy/xl-deploy-10.0.0-server/bin
+cd /opt/xldeploy/xl-deploy-10.0.0-server/bin
 ./run.sh
 ```
 
@@ -191,21 +191,21 @@ cd /opt/xl-deploy/xl-deploy-10.0.0-server/bin
 
 Start the xldeploy master-1
 ```
-cd /opt/xl-deploy/xl-deploy-10.0.0-server/bin
+cd /opt/xldeploy/xl-deploy-10.0.0-server/bin
 ./run.sh
 ```
 <b>step 7: (On worker-0)
 
 Start the worker -0
 ```
-cd /opt/xl-deploy/xl-deploy-10.0.0-server/bin
+cd /opt/xldeploy/xl-deploy-10.0.0-server/bin
 ./run.sh worker -api http://<LB IP> -master <master-1 IP>:8180 -master <master-2 IP>:8180 -name worker1 -hostname devops-centos-12 -port 8181
 ```
 <b>Step 8: (On worker-1)
 
 Start the worker -1  
 ```
-cd /opt/xl-deploy/xl-deploy-10.0.0-server/bin
+cd /opt/xldeploy/xl-deploy-10.0.0-server/bin
 ./run.sh worker -api http://<LB IP> -master <master-1 IP>:8180 -master <master-2 IP>:8180 -name worker2 -hostname devops-centos-13 -port 8182
 ```
 
