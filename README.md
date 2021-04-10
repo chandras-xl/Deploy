@@ -25,7 +25,7 @@ Services required:
 ```
 <h1> Setup </h1>
 
-Since this is dev setup we will diable the firewalld service on all the nodes
+Since this is a dev setup we will diable the firewalld service on all the nodes
 ```
 systemctl status firewalld.service
 systemctl stop firewalld.service
