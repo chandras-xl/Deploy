@@ -216,7 +216,7 @@ Start the worker -1
 cd /opt/xldeploy/xl-deploy-10.0.0-server/bin
 ./run.sh worker -api http://172.16.28.68 -master 172.16.25.133:8180 -master 172.16.21.134:8180 -name worker-1 -hostname devops-centos-8 -port 8181
 ```
-Access the Deploy UI with HAproxy URI
+Access the Deploy UI with below URI
 ```
 http://devops-centos-10.xebialabs.com/
 ```
