@@ -153,6 +153,7 @@ cd /opt/xldeploy/
 Download the deploy installer from xebialabs distribution
 ```
 wget --user $USER --password $PASSWORD https://dist.xebialabs.com/customer/xl-deploy/product/10.0.0/xl-deploy-10.0.0-server.zip
+
 unzip xl-deploy-10.0.0-server.zip
 ```
 Place the required jar files in the lib forlder.
