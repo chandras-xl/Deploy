@@ -29,7 +29,7 @@ Since this is dev setup we will diable the firewalld service on all the nodes
 ```
 systemctl status firewalld.service
 systemctl stop firewalld.service
-systemctl status firewalld.service
+systemctl disable firewalld.service
 ```
 
 <b>step 1: (On devops-centos-10)</b>
