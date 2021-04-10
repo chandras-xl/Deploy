@@ -2,7 +2,7 @@
 
 <h4><b>Environment Details:</h4>
 
-Java version
+Java version -
 Deploy requires Java SE 8 or Java SE 11
 
 OS - CentOS Linux release 8.1.1911 (Core)
