@@ -11,7 +11,7 @@ OS - CentOS Linux release 8.1.1911 (Core)
 2. devops-centos-4   172.16.21.134 - Deploy master -1
 3. devops-centos-5   172.16.29.23  - Deploy worker -0
 4. devops-centos-8   172.16.29.35  - Deploy worker -1
-5. devops-centos-1   172.16.16.136 - RabbitMQ
+5. devops-centos-1   172.16.23.29  - RabbitMQ
 6. devops-centos-10  172.16.28.68  - Postgres DB, HAproxy LoadBalancer
 ```
 Services required:
