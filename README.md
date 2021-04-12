@@ -105,7 +105,7 @@ Mount the NFS share
 NFS -
 Mount below filesystem to be shared between both the master instances
 ```
-mkdir /mnt/deploy-demo/opt/xldeploy/xl-deploy-10.0.0-server/exports/
+mkdir -p /mnt/deploy-demo/opt/xldeploy/xl-deploy-10.0.0-server/exports/
 mount -t nfs 172.16.0.45:/deploy-demo /mnt/deploy-demo/opt/xldeploy/xl-deploy-10.0.0-server/exports/
 ```
 Add the entry in fstab
@@ -113,7 +113,10 @@ Add the entry in fstab
 vi /etc/fstab
 172.16.0.45:/deploy-demo /mnt/deploy-demo/opt/xl-deploy/xldeploy-10.0.0-server/exports/  nfs defaults 0 0
 ```
-
+Reload the fstab
+```
+mount -a
+```
 <b>Step 4: (On devops-centos-10)
   
 Installing HAproxy 
