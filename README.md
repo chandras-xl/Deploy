@@ -113,10 +113,6 @@ Add the entry in fstab
 vi /etc/fstab
 172.16.0.45:/deploy-demo /mnt/deploy-demo/opt/xl-deploy/xldeploy-10.0.0-server/exports/  nfs defaults 0 0
 ```
-Reload the fstab
-```
-mount -a
-```
 <b>Step 4: (On devops-centos-10)
   
 Installing HAproxy 
