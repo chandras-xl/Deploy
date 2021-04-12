@@ -1,0 +1,18 @@
+2021-04-09 09:11:04.473 CEST [37539] LOG:  database system was shut down at 2021-04-09 09:10:59 CEST
+2021-04-09 09:11:04.479 CEST [37537] LOG:  database system is ready to accept connections
+2021-04-09 09:42:02.968 CEST [37537] LOG:  received fast shutdown request
+2021-04-09 09:42:03.019 CEST [37537] LOG:  aborting any active transactions
+2021-04-09 09:42:03.025 CEST [37537] LOG:  background worker "logical replication launcher" (PID 37545) exited with exit code 1
+2021-04-09 09:42:03.027 CEST [37540] LOG:  shutting down
+2021-04-09 09:42:03.115 CEST [37537] LOG:  database system is shut down
+2021-04-09 09:42:20.436 CEST [1223] LOG:  database system was shut down at 2021-04-09 09:42:03 CEST
+2021-04-09 09:42:20.465 CEST [1201] LOG:  database system is ready to accept connections
+2021-04-09 13:44:19.533 CEST [1201] LOG:  received fast shutdown request
+2021-04-09 13:44:19.535 CEST [1201] LOG:  aborting any active transactions
+2021-04-09 13:44:19.545 CEST [1201] LOG:  background worker "logical replication launcher" (PID 1234) exited with exit code 1
+2021-04-09 13:44:19.545 CEST [1229] LOG:  shutting down
+2021-04-09 13:44:19.561 CEST [1201] LOG:  database system is shut down
+2021-04-09 13:50:49.712 CEST [46460] LOG:  database system was shut down at 2021-04-09 13:44:19 CEST
+2021-04-09 13:50:49.718 CEST [46456] LOG:  database system is ready to accept connections
+2021-04-09 13:51:34.714 CEST [46521] ERROR:  relation "public.databasechangeloglock" does not exist at character 22
+2021-04-09 13:51:34.714 CEST [46521] STATEMENT:  SELECT COUNT(*) FROM public.databasechangeloglock
