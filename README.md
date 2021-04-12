@@ -105,6 +105,7 @@ Mount the NFS share
 NFS -
 Mount below filesystem to be shared between both the master instances
 ```
+mkdir /mnt/deploy-demo/opt/xldeploy/xl-deploy-10.0.0-server/exports/
 mount -t nfs 172.16.0.45:/deploy-demo /mnt/deploy-demo/opt/xldeploy/xl-deploy-10.0.0-server/exports/
 ```
 Add the entry in fstab
